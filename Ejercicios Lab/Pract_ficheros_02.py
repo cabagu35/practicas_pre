@@ -8,6 +8,8 @@ def reg_invitados(archivo):
 
 
 
+
 #Programa principal:
 archivo = 'invitados.txt'
 reg_invitados(archivo)
+

@@ -21,10 +21,6 @@ def consulta_lines_with(archivo):
     with open(archivo, mode='r') as texto:
         for linea in texto:
             lista.append(linea.strip())
-    return lista
-
-
-
-#Programa principal:
-archivo = 'consulta.txt'
-print(consulta_lines(archivo))
+    print("Libro de Visitas:")
+    for linea in lista:
+        print(linea)
