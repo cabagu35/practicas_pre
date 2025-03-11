@@ -2,13 +2,13 @@
 # Base PyQt5
 import sys
 from PyQt5 import QtCore, QtGui, uic
-from PyQt5.QtWidgets import QMainWindow,QApplication, QMessageBox
+from PyQt5.QtWidgets import QDialog,QApplication, QMessageBox
  # Cargar nuestro formulario *.ui
 form_class = uic.loadUiType("calculadora.ui")[0]
 #Crear la Clase MyWindowClass con el formulario cargado.
-class MyWindowClass(QMainWindow, form_class):
+class MyWindowClass(QDialog, form_class):
     def __init__(self, parent=None):
-        QMainWindow.__init__(self, parent)
+        QDialog.__init__(self, parent)
         self.setupUi(self)
  #Implementacion de los Slots referenciados en QDesigner
 
