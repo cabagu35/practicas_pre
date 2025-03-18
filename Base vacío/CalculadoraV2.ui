@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Calculadora</class>
+ <widget class="QDialog" name="Calculadora">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>531</width>
+    <height>193</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Cuadro</string>
+  </property>
+  <widget class="QSplitter" name="splitter_6">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>20</y>
+     <width>441</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <widget class="QSplitter" name="splitter">
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+    <widget class="QLineEdit" name="entrada2">
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>22</pointsize>
+      </font>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="entrada1">
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>22</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="resultado">
+     <property name="minimumSize">
+      <size>
+       <width>181</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>22</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QSplitter" name="splitter_5">
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+    <widget class="QSplitter" name="splitter_4">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <widget class="QSplitter" name="splitter_2">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <widget class="QPushButton" name="btsuma">
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>+</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btresta">
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>-</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QSplitter" name="splitter_3">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <widget class="QPushButton" name="btmulti">
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>*</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btdivi">
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>/</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="btsalida">
+     <property name="minimumSize">
+      <size>
+       <width>80</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>salir</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btsuma</sender>
+   <signal>clicked()</signal>
+   <receiver>Calculadora</receiver>
+   <slot>opera()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>340</x>
+     <y>33</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>405</x>
+     <y>36</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btsalida</sender>
+   <signal>clicked()</signal>
+   <receiver>Calculadora</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>338</x>
+     <y>213</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>426</x>
+     <y>213</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btresta</sender>
+   <signal>clicked()</signal>
+   <receiver>Calculadora</receiver>
+   <slot>opera()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>333</x>
+     <y>59</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>432</x>
+     <y>66</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btmulti</sender>
+   <signal>clicked()</signal>
+   <receiver>Calculadora</receiver>
+   <slot>opera()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>368</x>
+     <y>126</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>442</x>
+     <y>99</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btdivi</sender>
+   <signal>clicked()</signal>
+   <receiver>Calculadora</receiver>
+   <slot>opera()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>368</x>
+     <y>163</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>441</x>
+     <y>138</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>entrada1</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>Calculadora</receiver>
+   <slot>verifica()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>108</x>
+     <y>73</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>150</x>
+     <y>95</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>entrada2</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>Calculadora</receiver>
+   <slot>verifica()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>170</x>
+     <y>142</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>197</x>
+     <y>176</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>opera()</slot>
+  <slot>verifica()</slot>
+ </slots>
+</ui>
